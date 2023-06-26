@@ -3,66 +3,184 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div>
-      <video autoplay muted loop id="myVideo">
-        <source
-          src="/Video/BB_c9f66eb3-f814-4501-82f4-23dd8f8eb986_FPpreview.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support HTML5 video.
-      </video>
+    <video autoplay muted loop id="myVideo">
+      <source
+        src="/Video/BB_c9f66eb3-f814-4501-82f4-23dd8f8eb986_FPpreview.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support HTML5 video.
+    </video>
 
-      <div class="content">
-        <nav class="navbar">
-          <a href="#">ASTRO MOTION</a>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#service">ABOUT</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
+    <div class="content">
+      <nav class="navbar">
+        <a href="#">ASTRO MOTION</a>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <div class="nav-bars">
+            <i class="fa fa-bars"></i>
+          </div>
+        </ul>
+      </nav>
 
-        <div class="main-home">
-          <div class="row">
-            <div class="description">
-              <h3>Welcome to the Astro Motion</h3>
-              <p>
-                This HTML template has a motion video background loop which is
-                provided by GetFreePictures.com. This is one-page responsive
-                layout for your websites. Feel free to use this for a commercial
-                purpose. Donec bibendum enim mi, at tristique leo feugiat at
-                vitae blandit est vestibulum sit. Ante ipsum ultrices urna
-                volutpat ipsum.
-              </p>
+      <div class="main-home">
+        <div class="row">
+          <div class="description">
+            <h3>Welcome to the Astro Motion</h3>
+            <p>
+              This HTML template has a motion video background loop which is
+              provided by GetFreePictures.com. This is one-page responsive
+              layout for your websites. Feel free to use this for a commercial
+              purpose. Donec bibendum enim mi, at tristique leo feugiat at vitae
+              blandit est vestibulum sit. Ante ipsum ultrices urna volutpat
+              ipsum.
+            </p>
+          </div>
+          <div class="img-se">
+            <div class="imges">
+              <img src="img/home-img-1.jpg" />
             </div>
-            <div class="img-se">
-              <div class="imges">
-                <img src="img/home-img-1.jpg" />
-              </div>
-              <div class="imges">
-                <img src="img/home-img-2.jpg" />
-              </div>
+            <div class="imges">
+              <img src="img/home-img-2.jpg" />
             </div>
           </div>
         </div>
-
-        <p>
-          Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
-          phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
-          maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
-          latine molestiae, ad mutat oblique delicatissimi pro.
-        </p>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
       </div>
+      <div class="but-cl">
+        <button id="myBtn" onclick="myFunction()">VIEW GALLERY</button>
+      </div>
+
+      <section class="gallery" id="gallery">
+        <div class="gallery-main">
+          <div class="slideshow-container">
+            <div class="mySlides-fade">
+              <img src="./img/gallery-img-02.jpg" style="width: 100%" />
+              <div class="overlay">
+                <div class="div-im">
+                  <span class="img__description"
+                    >JULIA DANCE IN THE DEEP DARK</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mySlides-fade">
+              <img src="./img/gallery-img-03.jpg" style="width: 100%" />
+              <div class="overlay">
+                <div class="div-im">
+                  <span class="img__description"
+                    >JULIA DANCE IN THE DEEP DARK</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mySlides-fade">
+              <img src="./img/gallery-img-05.jpg" style="width: 100%" />
+              <div class="overlay">
+                <div class="div-im">
+                  <span class="img__description"
+                    >JULIA DANCE IN THE DEEP DARK</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mySlides-fade">
+              <img src="./img/gallery-img-02.jpg" style="width: 100%" />
+              <div class="overlay">
+                <div class="div-im">
+                  <span class="img__description"
+                    >JULIA DANCE IN THE DEEP DARK</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mySlides-fade">
+              <img src="./img/gallery-img-03.jpg" style="width: 100%" />
+              <div class="overlay">
+                <div class="div-im">
+                  <span class="img__description"
+                    >JULIA DANCE IN THE DEEP DARK</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-main">
+          <div class="about-con">
+            <div class="about-des">
+              <h3>ABOUT OUR COMPANY</h3>
+              <p>
+                You are allowed to use Astro Motion HTML Template for your
+                websites. vestibulum pellentesque aliquam ultricies, finibus nec
+                dui. Donec bibendum enim mi, at tristique leo feugiat at vitae
+                blandit est vestibulum sit. Praesent auctor rhoncus arcu, vitae
+                blandit est vestibulum sit amet.
+                <br />
+                Integer erat turpis, vestibulum pellentesque aliquam ultricies,
+                finibus nec dui. Donec bibendum enim mi, at tristique leo
+                feugiat at. Feugiat vitae blandit est vestibulum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us" id="contact">
+        <div class="con-main">
+          <div class="con-heding">
+            <h3>CONTACT US</h3>
+            <p>
+              Integer erat turpis, vestibulum pellentesque aliquam ultricies,
+              finibus nec dui.
+              <br />
+              Donec bibendum enim mi, at tristique leo feugiat at.
+              <br />
+              Email: mail@domain.com tel: 010-020-0340
+            </p>
+            <div class="map-c">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="form-ac">
+            <form class="form-main">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="fname" />
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="lname" />
+              <label for="lname">Message</label>
+              <input type="text" id="lname" name="lname" />
+              <button class="f-btn">SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-    <nav>
-      <ul>
-        <li>HOME</li>
-        <li>about</li>
-      </ul>
-    </nav>
   </body>
 </html>

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,8 +18,9 @@ body {
 }
 
 .content {
-  position: fixed;
+  position: relative;
   bottom: 100;
+  /* scroll-margin-block: 1000px; */
   background: rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
   width: 100%;
@@ -29,10 +31,13 @@ body {
   width: 200px;
   font-size: 18px;
   padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   border: none;
   background: #000;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #myBtn:hover {
@@ -66,6 +71,10 @@ body {
   border-bottom: 2px solid white;
 }
 
+.nav-bars {
+  display: none;
+}
+
 .navbar ul li a:hover {
   /* border-color: red; */
   color: red;
@@ -76,7 +85,7 @@ body {
 }
 
 .main-home {
-  height: 455px;
+  height: auto;
   /* background-color: rgb(0, 0, 0, 0.5);    */
   width: auto;
   /* border: 2px solid white; */
@@ -120,4 +129,173 @@ body {
 
 .imges {
   margin: 15px;
+}
+
+.but-cl {
+  text-align: center;
+}
+
+.gallery-main {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  /* height: 400px; */
+  margin: 10px 120px 10px 120px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-bottom: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides-fade {
+  position: relative;
+  margin: 20px;
+}
+
+.about-main {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 10px 10px 10px 10px;
+  /* height: 400px; */
+  margin: 50px 120px 10px 120px;
+}
+
+.about-con {
+  background-color: rgb(0, 0, 0, 0.5);
+  line-height: 2;
+  padding: 20px 20px 20px 20px;
+  /* font-size: 20px; */
+}
+
+.about-con p {
+  font-size: 20px;
+}
+
+.about-con h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.con-main {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 10px 10px 10px 10px;
+  /* height: 400px; */
+  display: flex;
+  /* background-color: rgb(0, 0, 0, 0.5); */
+  align-items: center;
+  margin: 50px 120px 10px 120px;
+}
+
+.con-heding {
+  background-color: rgb(0, 0, 0, 0.5);
+  line-height: 2;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.con-heding h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.con-heding p {
+  font-size: 20px;
+}
+input[type="text"] {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid whitesmoke;
+  padding: 10px 20px;
+  margin: 8px 0;
+}
+
+.f-btn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.f-btn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.map-c {
+  width: 500px;
+  height: 200px;
+  padding: 10px 10px 10px 10px;
+}
+.form-ac {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  margin: 40px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.map-c iframe {
+  width: auto;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  /* background-color: #62aac2; */
+}
+.mySlides-fade:hover .overlay {
+  opacity: 1;
+}
+
+.div-im {
+  text-align: center;
+  margin: 30px 30px 30px 30px;
+  background-color: rgb(255, 255, 255);
+  line-height: 2.4;
+  color: black;
 }
