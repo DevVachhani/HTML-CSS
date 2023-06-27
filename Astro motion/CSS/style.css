@@ -52,7 +52,7 @@ body {
 
 .navbar a {
   font-size: 25px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   color: #fff;
   transition: 0.3s;
   text-decoration: none;
@@ -89,12 +89,12 @@ body {
   /* background-color: rgb(0, 0, 0, 0.5);    */
   width: auto;
   /* border: 2px solid white; */
-  margin: 10px 120px 10px 120px;
+  /* margin: 10px 120px 10px 120px; */
   border-bottom: 2px solid white;
   border-top: 2px solid white;
 }
 
-.row {
+.main-swe {
   padding: 15px 20px 10px 20px;
   display: flex;
 }
@@ -139,7 +139,7 @@ body {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   /* height: 400px; */
-  margin: 10px 120px 10px 120px;
+  /* margin: 10px 120px 10px 120px; */
 }
 
 .slideshow-container {
@@ -162,7 +162,7 @@ body {
   height: 15px;
   width: 15px;
   margin-bottom: 10px;
-  background-color: #bbb;
+  background-color: #e8e5e5;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -186,7 +186,8 @@ body {
   border-bottom: 2px solid white;
   padding: 10px 10px 10px 10px;
   /* height: 400px; */
-  margin: 50px 120px 10px 120px;
+  margin-top: 20px;
+  /* margin: 50px 120px 10px 120px; */
 }
 
 .about-con {
@@ -213,7 +214,9 @@ body {
   display: flex;
   /* background-color: rgb(0, 0, 0, 0.5); */
   align-items: center;
-  margin: 50px 120px 10px 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* margin: 50px 120px 10px 120px; */
 }
 
 .con-heding {
@@ -257,8 +260,8 @@ input[type="text"] {
 }
 
 .map-c {
-  width: 500px;
-  height: 200px;
+  width: auto;
+  height: auto;
   padding: 10px 10px 10px 10px;
 }
 .form-ac {
